@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="spark-streaming-wordcount-on-nifi"
+		module="spark-streaming-wordcount-on-nifi_2.10"
+		revision="1.0"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20181129180609"/>
+	<dependencies>
+		<module organisation="org.apache.nifi" name="nifi-spark-receiver">
+			<revision name="0.3.0" status="release" pubdate="20150915050611" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<metadata-artifact status="successful" details="" size="1650" time="363" location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-spark-receiver/ivy-0.3.0.xml" searched="true" original-local-location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-spark-receiver/ivy-0.3.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/nifi/nifi-spark-receiver/0.3.0/nifi-spark-receiver-0.3.0.pom"/>
+				<caller organisation="spark-streaming-wordcount-on-nifi" name="spark-streaming-wordcount-on-nifi_2.10" conf="compile, runtime-internal, runtime, optional" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="nifi-spark-receiver" type="jar" ext="jar" status="successful" details="" size="15215" time="248" location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-spark-receiver/jars/nifi-spark-receiver-0.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/nifi/nifi-spark-receiver/0.3.0/nifi-spark-receiver-0.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.nifi" name="nifi-site-to-site-client">
+			<revision name="0.3.0" status="release" pubdate="20150915051332" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<metadata-artifact status="successful" details="" size="2107" time="214" location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-site-to-site-client/ivy-0.3.0.xml" searched="true" original-local-location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-site-to-site-client/ivy-0.3.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/nifi/nifi-site-to-site-client/0.3.0/nifi-site-to-site-client-0.3.0.pom"/>
+				<caller organisation="org.apache.nifi" name="nifi-spark-receiver" conf="default, compile, runtime, master" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="0.3.0"/>
+				<artifacts>
+					<artifact name="nifi-site-to-site-client" type="jar" ext="jar" status="successful" details="" size="101800" time="615" location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-site-to-site-client/jars/nifi-site-to-site-client-0.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/nifi/nifi-site-to-site-client/0.3.0/nifi-site-to-site-client-0.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.nifi" name="nifi-client-dto">
+			<revision name="0.3.0" status="release" pubdate="20150915050010" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<metadata-artifact status="successful" details="" size="1455" time="214" location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-client-dto/ivy-0.3.0.xml" searched="true" original-local-location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-client-dto/ivy-0.3.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/nifi/nifi-client-dto/0.3.0/nifi-client-dto-0.3.0.pom"/>
+				<caller organisation="org.apache.nifi" name="nifi-site-to-site-client" conf="compile, runtime" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="0.3.0"/>
+				<artifacts>
+					<artifact name="nifi-client-dto" type="jar" ext="jar" status="successful" details="" size="173701" time="665" location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-client-dto/jars/nifi-client-dto-0.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/nifi/nifi-client-dto/0.3.0/nifi-client-dto-0.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.wordnik" name="swagger-annotations">
+			<revision name="1.5.3-M1" status="release" pubdate="20150323230149" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<metadata-artifact status="successful" details="" size="1131" time="114" location="/Users/stan/.ivy2/cache/com.wordnik/swagger-annotations/ivy-1.5.3-M1.xml" searched="true" original-local-location="/Users/stan/.ivy2/cache/com.wordnik/swagger-annotations/ivy-1.5.3-M1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/wordnik/swagger-annotations/1.5.3-M1/swagger-annotations-1.5.3-M1.pom"/>
+				<caller organisation="org.apache.nifi" name="nifi-client-dto" conf="compile, runtime" rev="1.5.3-M1" rev-constraint-default="1.5.3-M1" rev-constraint-dynamic="1.5.3-M1" callerrev="0.3.0"/>
+				<artifacts>
+					<artifact name="swagger-annotations" type="bundle" ext="jar" status="successful" details="" size="10675" time="101" location="/Users/stan/.ivy2/cache/com.wordnik/swagger-annotations/bundles/swagger-annotations-1.5.3-M1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/wordnik/swagger-annotations/1.5.3-M1/swagger-annotations-1.5.3-M1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-mapper-asl">
+			<revision name="1.9.13" status="release" pubdate="20130715070750" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2787" time="0" location="/Users/stan/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/ivy-1.9.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.pom"/>
+				<caller organisation="org.apache.nifi" name="nifi-site-to-site-client" conf="compile, runtime" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="0.3.0"/>
+				<artifacts>
+					<artifact name="jackson-mapper-asl" type="jar" ext="jar" status="no" details="" size="780664" time="0" location="/Users/stan/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-core-asl">
+			<revision name="1.9.13" status="release" pubdate="20130715070730" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2564" time="0" location="/Users/stan/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/ivy-1.9.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.pom"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-mapper-asl" conf="compile, runtime" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="1.9.13"/>
+				<artifacts>
+					<artifact name="jackson-core-asl" type="jar" ext="jar" status="no" details="" size="232248" time="0" location="/Users/stan/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.13.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.nifi" name="nifi-utils">
+			<revision name="0.3.0" status="release" pubdate="20150915050434" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<metadata-artifact status="successful" details="" size="1518" time="235" location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-utils/ivy-0.3.0.xml" searched="true" original-local-location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-utils/ivy-0.3.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/nifi/nifi-utils/0.3.0/nifi-utils-0.3.0.pom"/>
+				<caller organisation="org.apache.nifi" name="nifi-site-to-site-client" conf="compile, runtime" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="0.3.0"/>
+				<artifacts>
+					<artifact name="nifi-utils" type="jar" ext="jar" status="successful" details="" size="110978" time="489" location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-utils/jars/nifi-utils-0.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/nifi/nifi-utils/0.3.0/nifi-utils-0.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.nifi" name="nifi-api">
+			<revision name="0.3.0" status="release" pubdate="20150915050510" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<metadata-artifact status="successful" details="" size="1291" time="225" location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-api/ivy-0.3.0.xml" searched="true" original-local-location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-api/ivy-0.3.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/nifi/nifi-api/0.3.0/nifi-api-0.3.0.pom"/>
+				<caller organisation="org.apache.nifi" name="nifi-site-to-site-client" conf="compile, runtime" rev="0.3.0" rev-constraint-default="0.3.0" rev-constraint-dynamic="0.3.0" callerrev="0.3.0"/>
+				<artifacts>
+					<artifact name="nifi-api" type="jar" ext="jar" status="successful" details="" size="160848" time="597" location="/Users/stan/.ivy2/cache/org.apache.nifi/nifi-api/jars/nifi-api-0.3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/nifi/nifi-api/0.3.0/nifi-api-0.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.4" status="release" pubdate="20140319034629" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2487" time="0" location="/Users/stan/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.pom"/>
+				<caller organisation="spark-streaming-wordcount-on-nifi" name="spark-streaming-wordcount-on-nifi_2.10" conf="compile, runtime-internal, runtime, optional" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126372" time="0" location="/Users/stan/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
